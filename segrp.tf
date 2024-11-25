@@ -1,4 +1,4 @@
-resources "aws_security_group" "vprofile-bean-elb-sg" {
+resource "aws_security_group" "vprofile-bean-elb-sg" {
     name        = "vprofile-bean-elb-sg"
     description = "security group for bean elb security group"
     vpc_id      = module.vpc.vpc_id
@@ -18,7 +18,7 @@ resources "aws_security_group" "vprofile-bean-elb-sg" {
 
 }
 
-resources "aws_seurity_group" "vprofile-bastion-sg" {
+resource "aws_seurity_group" "vprofile-bastion-sg" {
     name        = "vprofile-bastion-sg"
     description = "security group for bastion host security group"
     vpc_id      = module.vpc.vpc_id
@@ -38,7 +38,7 @@ resources "aws_seurity_group" "vprofile-bastion-sg" {
 
 }
 
-recources "aws_secrity_group" "vprofile-prod-sg" {
+recource "aws_secrity_group" "vprofile-prod-sg" {
     name        = "vprofile-prod-sg"
     description = "security group for production environment"
     vpc_id      = module.vpc.vpc_id
@@ -56,7 +56,7 @@ recources "aws_secrity_group" "vprofile-prod-sg" {
     }
 }
 
-resources "aws_secrity_group" "vprofile_backend_sg" {
+resource "aws_secrity_group" "vprofile_backend_sg" {
     name        = "vprofile-backend-sg"
     description = "security group for backend"
     vpc_id      = module.vpc.vpc_id
