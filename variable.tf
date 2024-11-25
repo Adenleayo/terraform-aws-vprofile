@@ -9,7 +9,7 @@ variable AMIS {
         us-east-2 = "ami-050cd642fd83388e4"
     }
 }
-varible "pub-key" {
+variable "pub-key" {
   default = "vprofile-key.pub"
 }
 
