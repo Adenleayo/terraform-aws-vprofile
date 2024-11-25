@@ -25,7 +25,7 @@ variable myip {
     default = "189.23.142.86/32"
 }
 
-varible rmquser {
+variable rmquser {
     default = "rabbit"
 }
 
