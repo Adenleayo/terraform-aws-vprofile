@@ -1,0 +1,3 @@
+#public and private key files for the bastion host
+*.pub
+vprofile-key
